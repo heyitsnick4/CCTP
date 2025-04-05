@@ -71,6 +71,7 @@ public class playerMovement2D : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded() || Input.GetKeyDown(KeyCode.Space) && CanParry || Input.GetKeyDown(KeyCode.Space) && CanDashJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            CanParry = false;
         }
         if(Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
         {
