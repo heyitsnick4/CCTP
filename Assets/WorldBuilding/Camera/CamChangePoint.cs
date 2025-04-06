@@ -7,6 +7,9 @@ public class CamChangePoint : MonoBehaviour
     [SerializeField] private GameObject CamMovePoint;
     [SerializeField] private GameObject Cam;
 
+    public CamFollowPlayer script;
+    public CamFollowPlayer script2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,8 @@ public class CamChangePoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Cam.transform.position = CamMovePoint.transform.position;
+            script.StopFollow();
+            script2.StopFollow();
         }
     }
 }

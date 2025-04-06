@@ -14,7 +14,7 @@ public class Button : MonoBehaviour
     {
         controls = new PlayerControls();
 
-        controls.Dash.DoorInput.performed += ctx => Destroy(DoorToDestroy);
+        controls.Dash.DoorInput.performed += ctx => DoorCanOpen();
     }
 
     // Update is called once per frame
@@ -53,5 +53,13 @@ public class Button : MonoBehaviour
     void OnDisable()
     {
         controls.Dash.Disable();
+    }
+
+    void DoorCanOpen()
+    {
+        if (CanOpen)
+        {
+            Destroy(DoorToDestroy);
+        }
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class DeathBox : MonoBehaviour
 {
-    private float RestartDelay = 1f;
     [SerializeField] private GameObject Player;
     [SerializeField] private GameObject RespawnPoint;
 
