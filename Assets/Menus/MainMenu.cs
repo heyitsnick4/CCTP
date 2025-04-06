@@ -8,7 +8,9 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -20,6 +22,11 @@ public class MainMenu : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void MainMenuL()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
