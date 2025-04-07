@@ -10,10 +10,14 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject PauseMenuUI;
 
+    PlayerControls controls;
+
     void Awake()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        controls = new PlayerControls();
+        controls.Dash.Pause.performed += ctx => ControllerPause();
     }
 
     // Update is called once per frame
@@ -62,5 +66,27 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    void ControllerPause()
+    {
+        if (IsPaused)
+        {
+            Unpause();
+        }
+        else
+        {
+            Pause();
+        }
+    }
+
+    void OnEnable()
+    {
+        controls.Dash.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Dash.Disable();
     }
 }

@@ -53,13 +53,22 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""815300ff-ec19-42a4-97a2-80513da8d0be"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""bc2fe78b-0437-4b1e-94a1-f6ec9a049375"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""GamePad"",
@@ -70,7 +79,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""b317dc5e-d735-467d-bc51-d65c8748c012"",
-                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""GamePad"",
@@ -86,6 +95,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f8687f34-b3f2-4426-b242-1c8affc643f6"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -105,6 +125,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Dash_Dash = m_Dash.FindAction("Dash", throwIfNotFound: true);
         m_Dash_DoorInput = m_Dash.FindAction("DoorInput", throwIfNotFound: true);
         m_Dash_Jump = m_Dash.FindAction("Jump", throwIfNotFound: true);
+        m_Dash_Pause = m_Dash.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -169,6 +190,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Dash_Dash;
     private readonly InputAction m_Dash_DoorInput;
     private readonly InputAction m_Dash_Jump;
+    private readonly InputAction m_Dash_Pause;
     public struct DashActions
     {
         private @PlayerControls m_Wrapper;
@@ -176,6 +198,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @Dash => m_Wrapper.m_Dash_Dash;
         public InputAction @DoorInput => m_Wrapper.m_Dash_DoorInput;
         public InputAction @Jump => m_Wrapper.m_Dash_Jump;
+        public InputAction @Pause => m_Wrapper.m_Dash_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Dash; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -194,6 +217,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IDashActions instance)
@@ -207,6 +233,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IDashActions instance)
@@ -238,5 +267,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnDash(InputAction.CallbackContext context);
         void OnDoorInput(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
