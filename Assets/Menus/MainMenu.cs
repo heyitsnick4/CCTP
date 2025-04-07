@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject PlayButton;
+    [SerializeField] private GameObject MainMenuButton;
     [SerializeField] private GameObject QuitButton;
 
     void Start()
@@ -36,15 +37,33 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void OnHover()
+    public void OnHoverPlay()
     {
-        PlayButton.GetComponent<Collider2D>().enabled = true;
-        QuitButton.GetComponent<Collider2D>().enabled = true;
+        PlayButton.SetActive(true);
     }
 
-    public void OnHoverStop()
+    public void OnHoverStopPlay()
     {
-        PlayButton.GetComponent<Collider2D>().enabled = false;
-        QuitButton.GetComponent<Collider2D>().enabled = false;
+        PlayButton.SetActive(false);
+    }
+
+    public void OnHoverQuit()
+    {
+        QuitButton.SetActive(true);
+    }
+
+    public void OnHoverStopQuit()
+    {
+        QuitButton.SetActive(false);
+    }
+
+    public void OnHoverMainMenu()
+    {
+        MainMenuButton.SetActive(true);
+    }
+
+    public void OnHoverStopMainMenuQuit()
+    {
+        MainMenuButton.SetActive(false);
     }
 }

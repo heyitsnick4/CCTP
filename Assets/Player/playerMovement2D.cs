@@ -56,8 +56,7 @@ public class playerMovement2D : MonoBehaviour {
     void Awake()
     {
         controls = new PlayerControls();
-
-        controls.Dash.Dash.performed += ctx => StartCoroutine(Dash());
+        controls.Dash.Dash.performed += ctx => ControllerDashCheck();
     }
 
     void Update()
@@ -68,12 +67,13 @@ public class playerMovement2D : MonoBehaviour {
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded() || Input.GetKeyDown(KeyCode.Space) && CanParry || Input.GetKeyDown(KeyCode.Space) && CanDashJump)
+        if(Input.GetButtonDown("Jump") && isGrounded() || Input.GetButtonDown("Jump") && CanParry || Input.GetButtonDown("Jump") && CanDashJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             CanParry = false;
+           CanDashJump = false;
         }
-        if(Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
+        if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
@@ -191,7 +191,7 @@ public class playerMovement2D : MonoBehaviour {
             WallJumpingCounter -= Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && WallJumpingCounter > 0f)
+        if (Input.GetButtonDown("Jump") && WallJumpingCounter > 0f)
         {
             IsWallJumping = true;
             rb.velocity = new Vector2(WallJumpingDirection * WallJumpingPower.x, WallJumpingPower.y);
@@ -233,5 +233,13 @@ public class playerMovement2D : MonoBehaviour {
     void OnDisable()
     {
         controls.Dash.Disable();
+    }
+
+    void ControllerDashCheck()
+    {
+        if (CanDash)
+        {
+            StartCoroutine(Dash());
+        }
     }
 }

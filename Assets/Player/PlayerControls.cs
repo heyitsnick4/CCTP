@@ -44,6 +44,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""d0259ea9-b5f9-4182-aafc-c10d64faa175"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -64,8 +73,19 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""GamePad"",
                     ""action"": ""DoorInput"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ccfff494-a79c-43f0-98ee-a8bdee7d10f0"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -84,6 +104,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Dash = asset.FindActionMap("Dash", throwIfNotFound: true);
         m_Dash_Dash = m_Dash.FindAction("Dash", throwIfNotFound: true);
         m_Dash_DoorInput = m_Dash.FindAction("DoorInput", throwIfNotFound: true);
+        m_Dash_Jump = m_Dash.FindAction("Jump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -147,12 +168,14 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IDashActions> m_DashActionsCallbackInterfaces = new List<IDashActions>();
     private readonly InputAction m_Dash_Dash;
     private readonly InputAction m_Dash_DoorInput;
+    private readonly InputAction m_Dash_Jump;
     public struct DashActions
     {
         private @PlayerControls m_Wrapper;
         public DashActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Dash => m_Wrapper.m_Dash_Dash;
         public InputAction @DoorInput => m_Wrapper.m_Dash_DoorInput;
+        public InputAction @Jump => m_Wrapper.m_Dash_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Dash; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -168,6 +191,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @DoorInput.started += instance.OnDoorInput;
             @DoorInput.performed += instance.OnDoorInput;
             @DoorInput.canceled += instance.OnDoorInput;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IDashActions instance)
@@ -178,6 +204,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @DoorInput.started -= instance.OnDoorInput;
             @DoorInput.performed -= instance.OnDoorInput;
             @DoorInput.canceled -= instance.OnDoorInput;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IDashActions instance)
@@ -208,5 +237,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     {
         void OnDash(InputAction.CallbackContext context);
         void OnDoorInput(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }
