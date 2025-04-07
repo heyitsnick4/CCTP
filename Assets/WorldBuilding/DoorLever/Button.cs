@@ -5,6 +5,7 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     [SerializeField] private GameObject DoorToDestroy;
+    [SerializeField] private GameObject TextToAppear;
 
     private bool CanOpen = false;
 
@@ -34,6 +35,7 @@ public class Button : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CanOpen = true;
+            TextToAppear.SetActive(true);
         }
     }
 
@@ -42,6 +44,7 @@ public class Button : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CanOpen = false;
+            TextToAppear.SetActive(false);
         }
     }
 
