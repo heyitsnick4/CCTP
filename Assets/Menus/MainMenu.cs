@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private GameObject PlayButton;
+    [SerializeField] private GameObject QuitButton;
+
     void Start()
     {
         Cursor.visible = true;
@@ -32,5 +34,17 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OnHover()
+    {
+        PlayButton.GetComponent<Collider2D>().enabled = true;
+        QuitButton.GetComponent<Collider2D>().enabled = true;
+    }
+
+    public void OnHoverStop()
+    {
+        PlayButton.GetComponent<Collider2D>().enabled = false;
+        QuitButton.GetComponent<Collider2D>().enabled = false;
     }
 }
