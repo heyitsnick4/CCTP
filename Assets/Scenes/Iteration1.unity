@@ -32954,7 +32954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: Press X to dodge
+      value: Press X to dash
       objectReference: {fileID: 0}
     - target: {fileID: 9214337636353346837, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Size.x
