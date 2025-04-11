@@ -974,11 +974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6966292467654924308, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Name
-      value: TextPrompt 1 (5)
+      value: ParyyPrompt
       objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: "Jumping of the green \norbs  boosts you up"
+      value: "Jumping off the green \norbs  boosts you up"
       objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Alignment
