@@ -262,11 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 32900000, guid: 27b6c097840606942bf4820ab988d2b3, type: 3}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.39
+      value: -6.12
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: 6.4
       objectReference: {fileID: 0}
     - target: {fileID: 5237270442737114013, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_IsActive
@@ -274,11 +274,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6276631965771058628, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.87
+      value: -1.18
       objectReference: {fileID: 0}
     - target: {fileID: 6276631965771058628, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.82
+      value: 3.27
       objectReference: {fileID: 0}
     - target: {fileID: 6966292467654924308, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Name
@@ -292,9 +292,25 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 1758322539}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.175636
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8078599
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: Dashing gives an extra jump
+      value: DASHING LETS YOU JUMP AGAIN IN THE AIR
       objectReference: {fileID: 0}
     - target: {fileID: 9214337636353346837, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Size.x
@@ -1139,11 +1155,11 @@ PrefabInstance:
       objectReference: {fileID: 32900000, guid: d016e7b7e44db6e42876fdb78095d9e6, type: 3}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.77
+      value: -4.65
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.51
+      value: 8.66
       objectReference: {fileID: 0}
     - target: {fileID: 5237270442737114013, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_IsActive
@@ -1169,9 +1185,26 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 1474075431}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.784135
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6186011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.2759
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9427
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: "Jumping off the green \norbs  boosts you up"
+      value: "JUMPING WHEN IN CONTACT WITH THE GREEN \nORBS MAKE THE CHARCTER JUMP
+        AGAIN"
       objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Alignment
@@ -6643,15 +6676,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.28
+      value: 2.54
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: 9.61
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6667,7 +6700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6276631965771058628, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.07
+      value: 4.58
       objectReference: {fileID: 0}
     - target: {fileID: 6966292467654924308, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Name
@@ -6681,9 +6714,25 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 2006412295}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.4135027
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.6924167
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5911
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3866
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: "Use  B  to jump.\nThe longer you hold \nit the higher you go"
+      value: "USE  B  TO JUMP.\nTHE LONGER YOU HOLD \nB THE HIGHER YOU GO"
       objectReference: {fileID: 0}
     - target: {fileID: 9214337636353346837, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Size.x
@@ -31408,11 +31457,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.51
+      value: 5.16
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.19
+      value: 5.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045568350129291320, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.027778
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045568350129291320, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.015625
       objectReference: {fileID: 0}
     - target: {fileID: 5237270442737114013, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_IsActive
@@ -31446,9 +31503,27 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 650956808}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.7163725
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6654717
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.2355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9573
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: "Moving into walls \nslows falling"
+      value: 'HOLDING A DIRRECTION INTO
+
+        A WALL SLOWS FALL SPEED'
       objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Alignment
@@ -33362,15 +33437,15 @@ PrefabInstance:
       objectReference: {fileID: 608161330}
     - target: {fileID: 3936286876228721195, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: 96.12
       objectReference: {fileID: 0}
     - target: {fileID: 3936286876228721195, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 3936286876228721195, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5.4
       objectReference: {fileID: 0}
     - target: {fileID: 3936286876228721195, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -33410,15 +33485,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4697061120475997538, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.48
+      value: -95.64
       objectReference: {fileID: 0}
     - target: {fileID: 4697061120475997538, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.8399997
+      value: 5.21
       objectReference: {fileID: 0}
     - target: {fileID: 4697061120475997538, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.997328
+      value: -4.5973277
       objectReference: {fileID: 0}
     - target: {fileID: 6132323644002036635, guid: 6d16f0d6472eab647ba7765d94bbe36c, type: 3}
       propertyPath: m_Name
@@ -34243,11 +34318,11 @@ PrefabInstance:
       objectReference: {fileID: 32900000, guid: ebcf04c4bd8371f48aef8a6b9da61e56, type: 3}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.69
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.86
+      value: 4.24
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34277,9 +34352,29 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 683745002}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.635285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7913002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.2165
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.01
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: Press X to dash
+      value: 'PRESS X TO DASH FORWARD
+
+        THERE IS A SHORT COOLDOWN AFTER
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 9214337636353346837, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Size.x
@@ -34572,11 +34667,11 @@ PrefabInstance:
       objectReference: {fileID: 32900000, guid: 7d7d1aca6ee14114a9daa0be2738e4f8, type: 3}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.22
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.69
+      value: 4.16
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34614,9 +34709,25 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 777235967}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.91
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: "Use the LEFT STICK \nto move you Character"
+      value: "USE THE LEFT THUMB STICK \nTO MOVE THE CHARACTER"
       objectReference: {fileID: 0}
     - target: {fileID: 9214337636353346837, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Size.x
@@ -36213,15 +36324,23 @@ PrefabInstance:
       objectReference: {fileID: 32900000, guid: 0ccfeaedd7e56e843ac2e2c47ecbeeab, type: 3}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8542187
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.92
+      value: 12.09
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.44
+      value: 13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045568350129291320, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.027778
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045568350129291320, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.015625
       objectReference: {fileID: 0}
     - target: {fileID: 5237270442737114013, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_IsActive
@@ -36255,9 +36374,27 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 372848155}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.778969
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.695135
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7813
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9305
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: "Jumping off \nwalls gives height"
+      value: 'WHEN ON A WALL JUMP
+
+        AGAIN TO PUSH OFF'
       objectReference: {fileID: 0}
     - target: {fileID: 9214337636353346837, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Size.x
@@ -36499,11 +36636,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03
+      value: -5.01
       objectReference: {fileID: 0}
     - target: {fileID: 3873180110566674376, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.71
+      value: 13.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045568350129291320, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.027778
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045568350129291320, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.015625
       objectReference: {fileID: 0}
     - target: {fileID: 5237270442737114013, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_IsActive
@@ -36537,9 +36682,30 @@ PrefabInstance:
       propertyPath: Video
       value: 
       objectReference: {fileID: 37349076}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.0758076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9922634
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9276
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409417690773187043, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.06
+      objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Text
-      value: "Press A to \nuse buttons"
+      value: "PRESS A TO USE THE BUTTONS\nBUTTONS OPEN DOORS WITH THE \nSAME NUMBER
+        SHOWN ABOVE"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
+      propertyPath: m_FontSize
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 9058284620763593903, guid: d6ce17d866befb6459703666e116ebe6, type: 3}
       propertyPath: m_Alignment
