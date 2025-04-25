@@ -5,6 +5,7 @@ using UnityEngine;
 public class PopupText : MonoBehaviour
 {
     [SerializeField] private GameObject Text;
+    [SerializeField] private GameObject Video;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class PopupText : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Text.gameObject.SetActive(true);
+            Video.gameObject.SetActive(true);
         }
     }
 
@@ -31,6 +33,7 @@ public class PopupText : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Text.gameObject.SetActive(false);
+            Video.gameObject.SetActive(false);
         }
     }
 }

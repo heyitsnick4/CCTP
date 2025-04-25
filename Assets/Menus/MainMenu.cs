@@ -27,6 +27,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void MainMenuL()
     {
         SceneManager.LoadScene(0);
