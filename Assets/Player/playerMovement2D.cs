@@ -31,7 +31,7 @@ public class playerMovement2D : MonoBehaviour {
     //Wall jumping
     private bool IsWallJumping;
     private float WallJumpingDirection;
-    private float WallJumpingTime = 0.2f;
+    private float WallJumpingTime = 0.8f;
     private float WallJumpingCounter;
     private float WallJumpingDuration = 0.4f;
     private Vector2 WallJumpingPower = new Vector2(8f, 16f);
